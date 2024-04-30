@@ -39,6 +39,15 @@ ej2.addEventListener("click",()=>{
 
 //ejercicio 3
 
-const ej3 = document.addEventListener("ej3");
 
+const numEj3 = document.getElementById("ej3");
+numEj3.addEventListener("click",()=>{
+    
+    const numElegidoj3 = parseInt(prompt("Ingrese un numero:"))
+    if (numElegidoj3 %2 === 0){
+        alert(`El numero ${numElegidoj3} es PAR`)
+    } else {
+        alert (`El numero ${numElegidoj3} es IMPAR`)
+    }
 
+})
