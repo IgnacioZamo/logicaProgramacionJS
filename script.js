@@ -72,9 +72,13 @@ numEj4.addEventListener("click",()=>{
                 for (let i = 0; i<cantNumEj4.length; i ++ ){
                     suma += cantNumEj4[i];
                 }
-                console.log(suma)
+                alert(`El resultado de la suma es: ${suma}`)
             } else {
-                alert("usted eligio una suma")
+                let multiplicacion = 1;
+                for(let i=0; i<cantNumEj4.length; i++){
+                    multiplicacion *= cantNumEj4[i];
+                }
+                alert(`El resultado de su producto es: ${multiplicacion}`)
             }
        } else {
         alert("Ha elegido una opcion invalida")
@@ -83,4 +87,3 @@ numEj4.addEventListener("click",()=>{
         alert("Ha ingresado un valor incorrecto o mayo a 10")
     }
 })
-
