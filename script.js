@@ -87,3 +87,18 @@ numEj4.addEventListener("click",()=>{
         alert("Ha ingresado un valor incorrecto o mayo a 10")
     }
 })
+
+
+//Ejercicio 5
+function numeroMayor(arr) {
+    let mayor = arr[0];
+    for (let num of arr) {
+        if (num > mayor) {
+            mayor = num;
+        }
+    }
+    return mayor;
+}
+
+// Ejemplo de uso:
+console.log(numeroMayor([1, 2, 43, 8, 5])); 
